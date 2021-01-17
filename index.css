@@ -1,3 +1,29 @@
+html {
+    font-size: 62.5%; 
+  }
+  
+  :root {
+    --text-color: #393939;
+    --minus-color: #FF6963;
+    --plus-color: #2ecc71;
+    --white-color: #f7f7f7;
+    --gray-color: #eee8e8cc;
+  }
+  
+  :root {
+    --big-font-size: 4.0rem;
+    --h1-font-size: 2.0rem;
+    --h2-font-size: 1.3rem;
+    --total-font-size: 2.5rem;
+    --h3-font-size: 1.6rem;
+    --normal-font-size: 1.8rem;
+    --topPercentage-font-size: 1.0rem;
+  }
+  
+  :root {
+    --normal-font-weight: 300;
+  }
+
 body {
   background: var(--white-color);
   font-family: "Open Sans", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
@@ -6,12 +32,16 @@ body {
   color: #393939;
   min-height: 100vh;
   font-size: 1.6em;
-}
-
-h1 {
   text-align: center;
 }
 
+
+
+ul {
+    margin: 0 auto;
+    list-style: none;
+}
+
 .container {
-  background: var(--white-color);
+  background: var(--gray-color);
 }
