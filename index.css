@@ -1,0 +1,17 @@
+body {
+  background: var(--white-color);
+  font-family: "Open Sans", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
+    "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  font-weight: 400;
+  color: #393939;
+  min-height: 100vh;
+  font-size: 1.6em;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  background: var(--white-color);
+}
