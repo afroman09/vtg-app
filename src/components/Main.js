@@ -3,13 +3,15 @@ import React from 'react'
 import { withRouter } from "react-router";
 
 function Main() {
+    
     return (
         <React.Fragment>
-        <div>
-            <h1>ルーレット画面</h1>
+        <div class="wrapper">
+            <div id="img"></div>
+            <button id="start-btn" onclick="getImage()">START</button>
         </div>
         </React.Fragment>
-    )
+    );
 }
 
 export default withRouter(Main);
