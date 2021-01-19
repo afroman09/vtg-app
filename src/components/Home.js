@@ -3,7 +3,7 @@ import { withRouter } from "react-router";
 import { Link } from "react-router-dom";
 // import Main from "./components/Main";
 
-function Home() {
+function Home(props) {
   return (
     <React.Fragment>
       <div>
@@ -12,7 +12,7 @@ function Home() {
           <div class="wrapper">
             <h3>- あなたはヴィンテージが好きですか？ -</h3>
           </div>
-          <Link to="./Main">
+          <Link to="/Main">
             <button>好き</button>
           </Link>
           <Link to="">
