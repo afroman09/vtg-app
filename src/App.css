@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+html {
+  font-size: 62.5%; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --text-color: #393939;
+  --minus-color: #FF6963;
+  --plus-color: #2ecc71;
+  --white-color: #f7f7f7;
+  --gray-color: #eee8e8cc;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+  --big-font-size: 4.0rem;
+  --h1-font-size: 2.0rem;
+  --h2-font-size: 1.3rem;
+  --total-font-size: 2.5rem;
+  --h3-font-size: 1.6rem;
+  --normal-font-size: 1.8rem;
+  --topPercentage-font-size: 1.0rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+:root {
+  --normal-font-weight: 300;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+background: var(--white-color);
+font-family: "Open Sans", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
+  "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+font-weight: 400;
+color: #393939;
+min-height: 100vh;
+font-size: 1.6em;
+text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.container {
+background: var(--gray-color);
+}
+
+#start-btn {
+clear: both;
 }
