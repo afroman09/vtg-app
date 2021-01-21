@@ -1,20 +1,22 @@
 import React from "react";
 import { withRouter } from "react-router";
-import img1 from './1.jpg';
-import img2 from './2.jpg';
-import img3 from './3.jpg';
+import img1 from './img/1.jpg';
+import img2 from './img/2.jpg';
+import img3 from './img/3.jpg';
 
-function Main(props) {
+const Main = () =>  {
+  
   function getImage() {
     let clothes = [img1, img2, img3];
     const result = Math.floor(Math.random() * clothes.length);
-    return clothes[result];
+    const resalt = clothes[result];
+    return resalt;
   }
 
   return (
     <React.Fragment>
       <div class="wrapper">
-        <div id="img" />
+  <div id="img">{getImage()}</div>
         <button id="start-btn" onclick={getImage()}>
           START
         </button>
