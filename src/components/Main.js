@@ -1,26 +1,32 @@
-/* eslint-disable jsx-a11y/alt-text */
-import React from "react";
+import React, {useState} from "react";
 import { withRouter } from "react-router";
 import img1 from "../assets/img/utumi.jpeg";
 import img2 from "../assets/img/komaba.jpeg";
 
 const Main = () => {
 
+  const [img, setImg] = useState([
+    img1,
+    img2,
+  ])
 
-  function getImage() {
-    let clothes = [img1, img2];
-    const result = Math.floor(Math.random() * clothes.length);
-    const resalt = clothes[result];
-    return resalt
+  const changeImg = () => {
+    const result = Math.floor(Math.random() * img.length);
+    setImg(img[result]);
+    return setImg
   }
 
-  const testimg = getImage();
+  // const getImage = () => {
+  //   const result = Math.floor(Math.random() * clothes.length);
+  //   const resalt = clothes[result];
+  //   return resalt
+  // }
 
   return (
     <React.Fragment>
       <div class="wrapper">
-        <img id="testImg" src={testimg}></img>
-        <button id="start-btn" onclick={getImage()}>
+        <img src={changeImg()} alt="画像"></img>
+        <button id="start-btn" onClick={() => changeImg()}>
           START
         </button>
       </div>
